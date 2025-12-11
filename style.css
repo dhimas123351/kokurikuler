@@ -1,0 +1,329 @@
+/* --- Global Styling --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef8f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* --- Global & Typography --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- Navigation Bar --- */
+header {
+    background-color: #8b4513; /* Coklat Gelap */
+    color: white;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #a0522d; /* Coklat sedikit muda saat hover */
+    border-radius: 4px;
+}
+
+/* --- HERO SECTION (Bagian Utama dengan Gambar Budaya) --- */
+.hero-section {
+    /* GANTI URL INI DENGAN GAMBAR BUDAYA INDONESIA YANG ANDA INGINKAN */
+    background-image: url('images/budaya-indonesia-hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Tinggi visual */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap agar teks terbaca */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ff8c00; /* Orange Ikonik */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e67e00;
+}
+
+/* --- QUICK INFO SECTION --- */
+.quick-info {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+    color: #a0522d;
+    margin-top: 0;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* --- MODAL / POP-UP Styling --- */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 500px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #8b4513;
+}
+
+.modal-content h2 {
+    color: #8b4513;
+}
+
+.btn-close-modal {
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.header-main {
+    background-color: #a0522d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+
+.header-main h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Grid dan Kartu Makanan --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #8b4513;
+    margin: 5px 0;
+}
+
+.card-content p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.open-modal-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.open-modal-btn:hover {
+    background-color: #e67e00;
+}
+
+/* --- Modal / Pop-up Styling --- */
+.modal {
+    display: none; /* Sembunyikan secara default */
+    position: fixed; 
+    z-index: 100; /* Di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Overlay gelap */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+#modal-body-content h2 {
+    color: #8b4513;
+    margin-top: 0;
+}
+
+#modal-body-content h3 {
+    color: #a0522d;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#modal-body-content .history {
+    font-style: italic;
+    color: #666;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f0e6d6;
+    color: #555;
+    font-size: 0.9em;
+}

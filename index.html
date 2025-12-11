@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Kuliner Nusantara Ikonik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Kuliner Nusantara | Beranda</title>
+    <style>
+        /* --- CSS Dasar untuk Tampilan --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #A52A2A; /* Cokelat Merah khas Indonesia */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #F0E68C; /* Kuning Pucat untuk kesan hangat */
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .hero h2 {
+            color: #A52A2A;
+        }
+        
+        /* --- CSS untuk Pop-up --- */
+        .modal {
+            display: none; /* Sembunyikan secara default */
+            position: fixed; /* Tetap di posisi yang sama saat scroll */
+            z-index: 1; /* Paling atas */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Aktifkan scroll jika konten terlalu besar */
+            background-color: rgba(0,0,0,0.7); /* Latar belakang gelap transparan */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% dari atas dan di tengah secara horizontal */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #A52A2A;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <
+
+    <div class="container">
+        
+        <section class="hero">
+            <h2>Selamat
+    <header class="header-main">
+        <h1>🍽️ Pesona 10 Kuliner Ikonik Nusantara</h1>
+        <p>Jelajahi rasa dan sejarah kekayaan masakan tradisional Indonesia.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-container">
+
+            <div class="food-card" data-id="rendang">
+                <img src=c:\Users\Dhimasbayu\Downloads\rendanggggkkkkkk.jpg alt="Rendang Daging Sapi">
+                <div class="card-content">
+                    <h2>Rendang</h2>
+                    <p>Sumatera Barat</p>
+                    <button class="open-modal-btn" data-food="rendang">Lihat Detail Resep</button>
+                </div>
+            </div>
+
+            <div class="food-card" data-id="soto">
+                <img src=c:\Users\Dhimasbayu\Downloads\soto.jpg alt="Soto Ayam">
+                <div class="card-content">
+                    <h2>Soto Ayam</h2>
+                    <p>Ikon Nasional</p>
+                    <button class="open-modal-btn" data-food="soto">Lihat Detail Resep</button>
+                </div>
+            </div>
+            
+            <div class="food-card" data-id="nasigoreng">
+                <img src=c:\Users\Dhimasbayu\Downloads\nasgor.jpg alt="Nasi Goreng">
+                <div class="card-content">
+                    <h2>Nasi Goreng</h2>
+                    <p>Ikon Malam Hari</p>
+                    <button class="open-modal-btn" data-food="nasigoreng">Lihat Detail Resep</button>
+                </div>
+            </div>
+
+            <div class="food-card" data-id="gadogado">
+                <img src=c:\Users\Dhimasbayu\Downloads\Resep-Gado-Gado.webp alt="Gado-Gado">
+                <div class="card-content">
+                    <h2>Gado-Gado</h2>
+                    <p>Jakarta / Betawi</p>
+                    <button class="open-modal-btn" data-food="gadogado">Lihat Detail Resep</button>
+                </div>
+            </div>
+
+            <div class="food-card" data-id="sate">
+                <img src="c:\Users\Dhimasbayu\Downloads\sate-ayam.jpg" alt="Sate Madura">
+                <div class="card-content">
+                    <h2>Sate Ayam</h2>
+                    <p>Ikon Bakaran</p>
+                    <button class="open-modal-btn" data-food="sate">Lihat Detail Resep</button>
+                </div>
+            </div>
+            
+            <div class="food-card" data-id="rawon">
+                <img src="c:\Users\Dhimasbayu\Downloads\rawon.jpg" alt="Rawon">
+                <div class="card-content">
+                    <h2>Rawon</h2>
+                    <p>Jawa Timur</p>
+                    <button class="open-modal-btn" data-food="rawon">Lihat Detail Resep</button>
+                </div>
+            </div>
+            
+            <div class="food-card" data-id="nasipadang">
+                <img src="c:\Users\Dhimasbayu\Downloads\nasik padank.jpg" alt="Nasi Padang">
+                <div class="card-content">
+                    <h2>Nasi Padang</h2>
+                    <p>Sumatera Barat</p>
+                    <button class="open-modal-btn" data-food="nasipadang">Lihat Detail Resep</button>
+                </div>
+            </div>
+
+            <div class="food-card" data-id="pempek">
+                <img src="c:\Users\Dhimasbayu\Downloads\pempek.jpg" alt="Pempek Palembang">
+                <div class="card-content">
+                    <h2>Pempek</h2>
+                    <p>Palembang</p>
+                    <button class="open-modal-btn" data-food="pempek">Lihat Detail Resep</button>
+                </div>
+            </div>
+
+            <div class="food-card" data-id="gudeg">
+                <img src="c:\Users\Dhimasbayu\Downloads\gudeg-2.jpg" alt="Gudeg Yogyakarta">
+                <div class="card-content">
+                    <h2>Gudeg</h2>
+                    <p>Yogyakarta</p>
+                    <button class="open-modal-btn" data-food="gudeg">Lihat Detail Resep</button>
+                </div>
+            </div>
+            
+            <div class="food-card" data-id="ayambetutu">
+                <img src="c:\Users\Dhimasbayu\Downloads\ayam-betutu-2.jpg" alt="Ayam Betutu Bali">
+                <div class="card-content">
+                    <h2>Ayam Betutu</h2>
+                    <p>Bali</p>
+                    <button class="open-modal-btn" data-food="ayambetutu">Lihat Detail Resep</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="kulinerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body-content">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Koleksi Kuliner Nusantara</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
